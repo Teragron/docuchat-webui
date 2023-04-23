@@ -1,0 +1,5 @@
+langchain
+huggingface_hub
+sentence_transformers
+gradio
+faiss-cpu
