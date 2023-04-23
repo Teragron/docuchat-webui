@@ -1,8 +1,8 @@
-##docuchat-webui
+# docuchat-webui
 
 This project is a web-based chatbot that uses language processing techniques to answer questions based on a given document. It uses the langchain library for question answering, document splitting, and document loading. The web interface is built with Gradio, which allows users to enter text or a URL to a text file, select a model, and ask a question related to the document.
 
-##Installation
+## Installation
 
 1. Clone this repository.
 
@@ -12,18 +12,18 @@ This project is a web-based chatbot that uses language processing techniques to 
 
 ```pip install -r requirements.txt```
 
-##Usage
+## Usage
 
 To start the chatbot, run app.py. The Gradio interface will be launched in your browser. Enter the text or URL to a text file, select a model, and ask your question related to the document. The chatbot will provide an answer based on the given input.
 
-##Files
+## Files
 
 document_chatbot.py: contains the DocumentChatbot class that handles loading the model and generating responses.
 app.py: contains the Gradio interface to interact with the chatbot.
 requirements.txt: contains the required libraries to run the project.
 
 
-##Dependencies
+## Dependencies
 
 This project uses the following libraries:
 
@@ -33,6 +33,6 @@ sentence_transformers: for generating embeddings of documents
 gradio: for building the web-based interface
 faiss-cpu: for similarity search in the document vectors
 
-#Acknowledgements
+## Acknowledgements
 
 This project was built by [your name or username] and is based on the LangChain library created by NLP Odyssey. The LangChain library provides an easy-to-use interface for natural language processing tasks such as question answering and document similarity search. The Gradio library provides a simple way to create web-based interfaces for machine learning models.
