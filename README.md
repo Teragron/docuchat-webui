@@ -14,7 +14,21 @@ This project is a web-based chatbot that uses language processing techniques to 
 
 ## Usage
 
-To start the chatbot, run app.py. The Gradio interface will be launched in your browser. Enter the text or URL to a text file, select a model, and ask your question related to the document. The chatbot will provide an answer based on the given input.
+1. Start the application.
+
+```python app.py```
+
+2. Enter a text or a URL to a text file.
+
+3. Load the Hugging Face API token and press Enter.
+
+4. Pick a model from the dropdown list.
+
+5. Enter a question to ask the model.
+
+The model will respond with an answer based on the input document and question.
+
+You can clear the chat history by clicking the "Clear" button.
 
 ## Files
 
