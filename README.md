@@ -27,12 +27,17 @@ requirements.txt: contains the required libraries to run the project.
 
 This project uses the following libraries:
 
-langchain: for question answering, document splitting, and document loading
-huggingface_hub: for loading models from Hugging Face Hub
-sentence_transformers: for generating embeddings of documents
-gradio: for building the web-based interface
-faiss-cpu: for similarity search in the document vectors
+**langchain**: for question answering, document splitting, and document loading
+
+**huggingface_hub**: for loading models from Hugging Face Hub
+
+**sentence_transformers**: for generating embeddings of documents
+
+**gradio**: for building the web-based interface
+
+**faiss-cpu**: for similarity search in the document vectors
+
 
 ## Acknowledgements
 
-This project was built by [your name or username] and is based on the LangChain library created by NLP Odyssey. The LangChain library provides an easy-to-use interface for natural language processing tasks such as question answering and document similarity search. The Gradio library provides a simple way to create web-based interfaces for machine learning models.
+This project was built by teragron and is based on the LangChain library created by NLP Odyssey. The LangChain library provides an easy-to-use interface for natural language processing tasks such as question answering and document similarity search. The Gradio library provides a simple way to create web-based interfaces for machine learning models.
