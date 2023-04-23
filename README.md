@@ -5,15 +5,19 @@ This project is a web-based chatbot that uses language processing techniques to 
 ##Installation
 
 1. Clone this repository.
+
 ```git clone https://github.com/<username>/docuchat-webui.git```
+
 2. Install the required packages.
 
 ```pip install -r requirements.txt```
 
 ##Usage
+
 To start the chatbot, run app.py. The Gradio interface will be launched in your browser. Enter the text or URL to a text file, select a model, and ask your question related to the document. The chatbot will provide an answer based on the given input.
 
 ##Files
+
 document_chatbot.py: contains the DocumentChatbot class that handles loading the model and generating responses.
 app.py: contains the Gradio interface to interact with the chatbot.
 requirements.txt: contains the required libraries to run the project.
