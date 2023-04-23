@@ -6,7 +6,7 @@ This project is a web-based chatbot that uses language processing techniques to 
 
 1. Clone this repository.
 
-```git clone https://github.com/<username>/docuchat-webui.git```
+```git clone https://github.com/teragron/docuchat-webui.git```
 
 2. Install the required packages.
 
@@ -18,9 +18,11 @@ To start the chatbot, run app.py. The Gradio interface will be launched in your 
 
 ## Files
 
-document_chatbot.py: contains the DocumentChatbot class that handles loading the model and generating responses.
-app.py: contains the Gradio interface to interact with the chatbot.
-requirements.txt: contains the required libraries to run the project.
+**document_chatbot.py**: contains the DocumentChatbot class that handles loading the model and generating responses.
+
+**app.py**: contains the Gradio interface to interact with the chatbot.
+
+**requirements.txt**: contains the required libraries to run the project.
 
 
 ## Dependencies
@@ -40,4 +42,4 @@ This project uses the following libraries:
 
 ## Acknowledgements
 
-This project was built by teragron and is based on the LangChain library created by NLP Odyssey. The LangChain library provides an easy-to-use interface for natural language processing tasks such as question answering and document similarity search. The Gradio library provides a simple way to create web-based interfaces for machine learning models.
+This project was built by Teragron and is based on the LangChain library created by NLP Odyssey. The LangChain library provides an easy-to-use interface for natural language processing tasks such as question answering and document similarity search. The Gradio library provides a simple way to create web-based interfaces for machine learning models.
