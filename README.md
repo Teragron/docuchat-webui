@@ -19,7 +19,6 @@ This project is a web-based chatbot that uses language processing techniques to 
 ```python app.py```
 
 2. Enter a text or a URL to a text file.
-
 3. Load the Hugging Face API token and press Enter.
 
 4. Pick a model from the dropdown list.
@@ -46,7 +45,6 @@ This project uses the following libraries:
 **langchain**: for question answering, document splitting, and document loading
 
 **huggingface_hub**: for loading models from Hugging Face Hub
-
 **sentence_transformers**: for generating embeddings of documents
 
 **gradio**: for building the web-based interface
