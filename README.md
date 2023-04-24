@@ -22,9 +22,9 @@ This project is a web-based chatbot that uses language processing techniques to 
 
 ```python app.py```
 
-2. Enter a text or a URL to a text file.
-3. 
-4. Load the Hugging Face API token and press Enter.
+2. Enter a text or an URL to a text file.
+
+3. Load the Hugging Face API token and press Enter.
 
 4. Pick a model from the dropdown list.
 
