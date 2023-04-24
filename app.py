@@ -13,10 +13,11 @@ with gr.Blocks() as demo:
         text_input = gr.Textbox(label="Enter text or URL to text file")
         with gr.Column():
             with gr.Row():
-                api_key_input = gr.Textbox(label="Enter HF Token to load the model")
-                api_key_input.submit(document_chatbot.load_token, inputs=api_key_input, outputs=api_key_input)
-                picked_model = gr.Dropdown(["google/flan-t5-large", "google/flan-t5-base","google/flan-t5-small"], label="Models")
-                picked_model.change(document_chatbot.load_model, picked_model)
+                api_key_input = gr.Textbox(label="Enter HF Token")
+                picked_model = gr.Dropdown(["google/flan-t5-large", "google/flan-t5-base","google/flan-t5-small"], label="Models", interactive=True)
+                load_configs = gr.Button("Load configs")
+                load_configs.click(document_chatbot.load_token_and_model, inputs=[api_key_input, picked_model], outputs=[api_key_input])
+                
             chatbot = gr.Chatbot()
 
             q_input = gr.Textbox(label="Please write your question")
