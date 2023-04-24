@@ -2,6 +2,10 @@
 
 This project is a web-based chatbot that uses language processing techniques to answer questions based on a given document. It uses the langchain library for question answering, document splitting, and document loading. The web interface is built with Gradio, which allows users to enter text or a URL to a text file, select a model, and ask a question related to the document.
 
+## Demo
+
+[![Open in Spaces](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/spaces/teragron/docuchat-webui)
+
 ## Installation
 
 1. Clone this repository.
