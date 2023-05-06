@@ -24,11 +24,9 @@ This project is a web-based chatbot that uses language processing techniques to 
 
 2. Enter a text or an URL to a text file.
 
-3. Load the Hugging Face API token and press Enter.
+3. Pick a model from the dropdown list.
 
-4. Pick a model from the dropdown list.
-
-5. Enter a question to ask the model.
+4. Enter a question to ask the model.
 
 The model will respond with an answer based on the input document and question.
 
