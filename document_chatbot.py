@@ -25,21 +25,12 @@ class DocumentChatbot:
         self.init_mes = ["According to the document, ", "Based on the text, ", "I think, ", "According to the text, ", "Based on the document you provided, "]
         
     
-    def load_token_and_model(self, api_key, model_name):
-        result = None
-        if api_key[:2] == "hf":
-            os.environ["HUGGINGFACEHUB_API_TOKEN"] = api_key
-            result = subprocess.run(["curl", "https://huggingface.co/api/whoami-v2", "-H", f"Authorization: Bearer {api_key}"], capture_output=True).stdout.decode()
-        if result == '{"error":"Invalid username or password."}':
-            return  "Invalid API token"
-        else:
-            self.llm = HuggingFaceHub(repo_id=model_name, model_kwargs={"temperature":0, "max_length":512})
-            self.chain = load_qa_chain(self.llm, chain_type="stuff")
-            self.embeddings = HuggingFaceEmbeddings()
-            return "Model and Token successfully loaded"
-        
 
-    def respond(self, text_input, question, chat_history):
+    
+    def respond(self, text_input, question, chat_history, model_name):
+        self.llm = HuggingFaceHub(repo_id=model_name, model_kwargs={"temperature":0, "max_length":512})
+        self.chain = load_qa_chain(self.llm, chain_type="stuff")
+        self.embeddings = HuggingFaceEmbeddings()
         if not question or question.isspace():
             return "Please enter a valid question.", chat_history
         if text_input.startswith("http"):
@@ -49,7 +40,6 @@ class DocumentChatbot:
                 raise ValueError("No document is given")
         else:
             text_var = text_input
-            
 
 
         time.sleep(0.5)
