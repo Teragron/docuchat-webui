@@ -6,10 +6,6 @@ This project is a web-based chatbot that uses language processing techniques to 
 
 [![Open in Spaces](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/spaces/teragron/docuchat-webui)
 
-## Showcase
-
-[![Showcase](https://img.youtube.com/vi/3N4-MweHqH4/0.jpg)](https://youtu.be/3N4-MweHqH4)
-
 ## Installation
 
 1. Clone this repository.
